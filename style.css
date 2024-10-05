@@ -1,0 +1,637 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*::selection{
+    background-color: rgba(255, 255, 0, 0.464);
+}
+@media(min-width:990px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 50px;
+        color: rgba(0, 0, 0, 0.696);
+        font-size: 18px;
+    }
+    .nav1{
+        display: flex;
+        gap:20px;
+    }
+    .navdesc1{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width:130px;
+        height:130px;
+        position: relative;
+    
+    }
+    .logoimg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+    }
+    .nav2{
+
+        display: flex;
+        gap:20px;
+    }
+    input{
+        padding: 12px 24px 12px 48px;
+        background-color: #F4F5FB;
+        color: lightgray;
+        border: 1px solid ;
+        border-radius: 20px;
+    }
+    
+    .signUp{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    }
+    
+    /* Design section1 */
+    .section1, .section2, .section4{
+        padding: 120px 20vmin;
+    }
+    .margin{
+        margin: 0 120px;
+    }
+    .sec1line2{
+        margin: 0 120px;
+        display:flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .profile{
+        display: flex;
+        gap: 20px;
+        align-items:  center;
+        
+    }
+    .photo{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .profileInfo h6, p{
+        margin:0;
+    }
+    .getIn{
+        display:flex;
+        gap:10px;
+        align-items: center;
+    }
+    .heart{
+        height: 24px;
+        width: 24px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        text-align: center;
+        padding: 4.5px;
+    }
+    .icon1{
+        height: 50px;
+        width: 50px;
+    }
+    .sec1img, .section2img{
+        width: 900px;
+        height: 720px;
+    }
+    .v-img, .sec2img, .sec2img2{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+    }
+    .sec2headings h2{
+        margin-left: 120px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    .border-bottom{
+        margin-bottom: 100px;
+    }
+    .section3{
+        margin:50px 300px;
+    }
+    .section3 p{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .sec4line1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       
+    }
+    .sec4line1 h3, .sec4line1 h4{
+        font-weight: 400;
+    }
+    .sec4line1::before{
+        content: "";
+        width: 90%;
+        height: 2px;
+        background-color: lightgray;
+        position: absolute;
+        top:50px;
+        z-index: -1;
+    }
+    .sec4line2{
+        display: flex;
+        width:87%;
+        justify-content: space-between;
+    }
+    .sec4img{
+        display: flex;
+        gap:5vmin;
+    }
+    .sec4Imgs{
+        width:40vmin;
+        border-radius: 12px;
+    }
+    .section5{
+        display:flex;
+        justify-content: center;
+        gap:2vmin;
+    }
+    .square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:24px;
+        height: 24px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+    }
+    .footerline1{
+        display:flex;
+        gap: 6vmin;
+        margin:0 20vmin;
+        align-items: center;
+    }
+    .footerline1 h5{
+        font-weight: 400;
+        font-size: 1em;
+    }
+    .footerline2{
+        display:flex;
+        justify-content: space-between;
+        margin:0 20vmin;
+        align-items: center;
+    }
+    .side{
+        display:flex;
+        gap: 1.5vmin;
+        align-items: center; 
+    }
+    .side h4{
+        font-weight: 400;
+        font-size: .85em;  
+    }
+    
+}
+@media(min-width:586px) and (max-width:990px){
+    .navbar{
+        width:80%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 2%;
+        padding: 0 10%;
+        color: rgba(0, 0, 0, 0.696);
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .nav1{
+        display: none;
+    }
+    .navbar::before{
+        content:"";
+        width:30px;
+        height:30px;
+        background-image: url('option.png');
+        background-size: cover; 
+    background-position: center; 
+    }
+    .nav2::before{
+        content:"";
+        width:30px;
+        height:30px;
+        background-image: url('find.png');
+        background-size: cover; 
+    background-position: center; 
+    }
+    .logo{
+        width:130px;
+        height:130px;
+        position: relative;
+    
+    }
+    .logoimg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+    }
+    .nav2{
+        display: flex;
+        gap:20px;
+    }
+    input{
+        display: none;
+    }
+    
+    .signUp{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    }
+    
+    /* Design section1 */
+    .section1, .section2, .section4{
+        width:80%;
+        padding: 120px 10%;
+        overflow: hidden;
+    }
+    .margin{
+        margin: 0 10%;
+    }
+    .sec1line2{
+        width: 80%;
+        padding: 0 10%;
+        display:flex;
+        gap: 20%;
+        border-bottom: 1px solid lightgray;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .profile{
+        display: flex;
+        gap: 20px;
+        align-items:  center;
+        
+    }
+    .photo{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .profileInfo h6, p{
+        margin:0;
+    }
+    .getIn{
+        display:flex;
+        gap:10px;
+        align-items: center;
+    }
+    .heart{
+        height: 24px;
+        width: 24px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        text-align: center;
+        padding: 4.5px;
+    }
+    .icon1{
+        height: 50px;
+        width: 50px;
+    }
+    .sec1img, .section2img{
+        width: 80%;
+        height: 80%;
+    }
+    .v-img, .sec2img, .sec2img2{
+        width:80%;
+        height:80%;
+        overflow: hidden;
+    }
+    .sec2headings h2{
+        /* margin:0 10vmin; */
+        font-weight: 300;
+    }
+    .border-bottom{
+        margin-bottom: 100px;
+    }
+    .section3{
+        width: 80%;
+        padding:50px 10%;
+    }
+    .section3 p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .sec4line1{
+        width:80%;
+        padding:0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       
+    }
+    .sec4line1 h3, .sec4line1 h4{
+        font-weight: 400;
+    }
+    .sec4line1::before{
+        content: "";
+        width: 200vmin;
+        /* transform: translate(-0%); */
+        height: 2px;
+        background-color: lightgray;
+        position: absolute;
+        top:50px;
+        z-index: -1;
+    }
+    .sec4line2{
+        display: flex;
+        width:87%;
+        justify-content: space-between;
+    }
+    .sec4img{
+        display: flex;
+        margin: 0 .5vmin;
+        gap:2vmin;
+        flex-wrap: wrap;
+    }
+    .sec4Imgs{
+        width:38vmin;
+        border-radius: 12px;
+    }
+    .section5{
+        display:flex;
+        justify-content: center;
+        gap:2vmin;
+    }
+    .square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:24px;
+        height: 24px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+    }
+    .footerline1{
+        display:flex;
+        gap: 5%;
+        margin:20px 20vmin;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footerline1 h5{
+        font-weight: 400;
+        font-size: .85em;
+        margin:0;
+    }
+    .footerline2{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:20px 20vmin;
+        align-items: center;
+    }
+    .side{
+        display:flex;
+        gap: 1.5vmin;
+        align-items: center; 
+    }
+    .side h4{
+        font-weight: 400;
+        font-size: .75em; 
+        margin:0; 
+    }
+    
+}
+@media(max-width: 586px){
+    .navbar{
+        width:80%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 2%;
+        padding: 0 10%;
+        color: rgba(0, 0, 0, 0.696);
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .nav1{
+        display: none;
+    }
+    .navbar::before{
+        content:"";
+        width:30px;
+        height:30px;
+        background-image: url('option.png');
+        background-size: cover; 
+    background-position: center; 
+    }
+    .nav2::before{
+        content:"";
+        width:30px;
+        height:30px;
+        background-image: url('find.png');
+        background-size: cover; 
+    background-position: center; 
+    }
+    .logo{
+        width:130px;
+        height:130px;
+        position: relative;
+    
+    }
+    .logoimg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+    }
+    .nav2{
+        display: flex;
+        gap:20px;
+    }
+    input{
+        display: none;
+    }
+    
+    .signUp{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    }
+    
+    /* Design section1 */
+    .section1, .section2, .section4{
+        width:80%;
+        padding: 120px 10%;
+        overflow: hidden;
+    }
+    .margin{
+        margin: 0 10%;
+    }
+    .sec1line2{
+        width: 80%;
+        padding: 0 10%;
+        display:flex;
+        gap: 20%;
+        border-bottom: 1px solid lightgray;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .profile{
+        display: flex;
+        gap: 20px;
+        align-items:  center;
+        
+    }
+    .photo{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .profileInfo h6, p{
+        margin:0;
+    }
+    .getIn{
+        display:flex;
+        gap:10px;
+        align-items: center;
+    }
+    .heart{
+        height: 24px;
+        width: 24px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        text-align: center;
+        padding: 4.5px;
+    }
+    .icon1{
+        height: 50px;
+        width: 50px;
+    }
+    .sec1img, .section2img{
+        width: 80%;
+        height: 80%;
+    }
+    .v-img, .sec2img, .sec2img2{
+        width:80%;
+        height:80%;
+        overflow: hidden;
+    }
+    .sec2headings h2{
+        /* margin:0 10vmin; */
+        font-weight: 300;
+    }
+    .border-bottom{
+        margin-bottom: 100px;
+    }
+    .section3{
+        width: 80%;
+        padding:50px 10%;
+    }
+    .section3 p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .sec4line1{
+        width:80%;
+        padding:0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       
+    }
+    .sec4line1 h3, .sec4line1 h4{
+        font-weight: 400;
+    }
+    .sec4line1::before{
+        content: "";
+        width: 200vmin;
+        /* transform: translate(-0%); */
+        height: 2px;
+        background-color: lightgray;
+        position: absolute;
+        top:50px;
+        z-index: -1;
+    }
+    .sec4line2{
+        display: flex;
+        width:87%;
+        justify-content: space-between;
+    }
+    .sec4img{
+        display: flex;
+        margin: 0 .5vmin;
+        gap:2vmin;
+        flex-wrap: wrap;
+    }
+    .sec4Imgs{
+        width:38vmin;
+        border-radius: 12px;
+    }
+    .section5{
+        display:flex;
+        justify-content: center;
+        gap:2vmin;
+    }
+    .square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:24px;
+        height: 24px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+    }
+    .footerline1{
+        display:flex;
+        gap: 5%;
+        margin:20px 20vmin;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footerline1 h5{
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0;
+    }
+    .footerline2{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:0 20vmin;
+        align-items: center;
+    }
+    .side{
+        display:flex;
+        gap: 1.5vmin;
+        align-items: center; 
+    }
+    .side h4{
+        font-weight: 400;
+        font-size: .85em;  
+    }
+    
+}
